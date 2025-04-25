@@ -14,10 +14,10 @@ public class Main {
         System.out.println("\tDigite 1 -- Exercício 1 -- PESQUISA DE AUDIÊNCIA DE CANAL DE TV ");
         System.out.println("\tDigite 2 -- Exercício 2 -- MÉDIA ARITMÉTICA E PONDERADA");
         System.out.println("\tDigite 3 -- Exercício 3 -- IDADE, PESO E ALTURA");
-        System.out.println("\tDigite 4 -- Exercício 4");
-        System.out.println("\tDigite 5 -- Exercício 5");
-        System.out.println("\tDigite 6 -- Exercício 6");
-        System.out.println("\tDigite 7 -- Exercício 7");
+        System.out.println("\tDigite 4 -- Exercício 4 -- SOMA DOS PRIMEIROS 50 NÚMEROS");
+        System.out.println("\tDigite 5 -- Exercício 5 -- USO ARRAYLIST MÉDICOS");
+        System.out.println("\tDigite 6 -- Exercício 6 -- ARRAYLIST CADASTRO SISTEMA");
+        System.out.println("\tDigite 7 -- Exercício 7 -- EM DESENVOLVIMENTO");
         System.out.println("\tDigite 0 -- SAIR --");
         opt = input.nextInt();
 
@@ -39,6 +39,21 @@ public class Main {
                 Exercicio3 exercicio3 = new Exercicio3();
                 exercicio3.executarExercicio3(input);
                 break;
+            case 4:
+                Exercicio4 exercicio4 = new Exercicio4();
+                exercicio4.executarExercicio4();
+                break;
+            case 5:
+                Exercicio5 exercicio5 = new Exercicio5();
+                exercicio5.executarExercicio5(input);
+                break;
+            case 6:
+                Exercicio6 exercicio6 = new Exercicio6();
+                exercicio6.executarExercicio6(input);
+                break;
+            case 7:
+                Exercicio7 exercicio7 = new Exercicio7();
+                exercicio7.executarExercicio7(input);
             default:
                     System.out.println("Digite um valor valido!!");
         }
